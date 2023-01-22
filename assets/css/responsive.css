@@ -1,0 +1,19 @@
+@media (max-width: 1200px){
+    .background-trailer{
+
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .container .infos{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container .joel-ellie{
+        max-width: 50%;
+    }
+}

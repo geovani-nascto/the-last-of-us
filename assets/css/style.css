@@ -1,0 +1,143 @@
+header{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+header a img{
+    width: 180px;
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header nav ul li a{
+    padding: 10px 20px;
+    font-size: 22px;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: #af772e;
+}
+
+.container{
+    height: calc(100vh - 100.8px);
+    display: flex;
+    align-items: center;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 30px 30px 30px;
+}
+
+.container .infos .title-series{
+    max-width: 500px;
+}
+
+.container .infos .description{
+    color: #a8adb7;
+    width: 85%;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.container .infos .trailer-button{
+    background-color: #af772e;
+    color: #fff;
+    padding: 15px;
+    border: 0;
+    font-size: 18px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    transition: 0.3s all ease-in-out;
+    cursor: pointer;
+}
+
+.container .infos .trailer-button:hover{
+    transform: scale(1.1);
+    background-color: #cf8f3b;
+}
+
+.container .joel-ellie{
+    width: 500px;
+}
+
+.background-trailer{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.background-trailer::after{
+    content: "";
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(6,6,6,0.7) 50%, rgba(0,0,0,1) 100%);
+}
+
+.background-trailer video{
+    height: 100vh;
+}
+
+.modal{
+    display: none;
+    /*opacity: 0*/
+    /*visibility: hidden*/
+    background-color: rgb(52, 52, 50, 0.749);
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.modal.opened{
+    display: block;
+    /*opacity: 0*/
+    /*visibility: hidden*/
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 5px; /*Espaçamento entre elemento com flex*/
+    border-radius: 5px;
+}
+
+.close-video{
+    background-color: #fff;
+    color: #af772e;
+    font-weight: bold;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#video{
+    border: 0;
+    width: 640px;
+    height: 360px;
+}

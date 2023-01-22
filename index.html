@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Last of Us - A Série</title>
     <!-- Favicon por: agentromi - DevianArt -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <title>The Last of Us - A Série</title>
 </head>
 <body>
     <div class="background-trailer">
@@ -20,18 +23,25 @@
         </a>
         <nav>
             <ul class="menu">
-                <li>Início</li>
-                <li>Detalhes</li>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Detalhes</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="container">
         <div class="infos">
-            <img src="assets/img/title-game-vertical.png" alt="Título da série" class="title-series">
+            <img src="assets/img/title-game-horizontal.png" alt="Título da série" class="title-series">
             <p class="description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis, voluptate itaque cum quis odit iusto similique, reiciendis dignissimos in facilis provident, commodi ab perferendis autem. Explicabo quidem recusandae dolorum unde!</p>
             <button class="trailer-button">Assistir trailer</button>
         </div>
         <img class="joel-ellie" src="assets/img/joel-ellie.png" alt="Joel e Ellie">
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close-video">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/VHNzi1CjDb0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
     </main>
 </body>
 </html>
